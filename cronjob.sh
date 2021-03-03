@@ -11,5 +11,6 @@ do
 	if [[ ! "$(/usr/sbin/service ${nymmixnode} status)" =~ "start/running" ]]
 	then
 		/usr/sbin/service ${nymmixnode} start
-	fi	
+	fi
+	sleep 45
 done
